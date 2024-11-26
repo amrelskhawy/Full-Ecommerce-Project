@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import { Home } from "./pages/home/page"
 import { Navbar } from "./components/Navbar"
-
+import "./App.css"
 
 function App() {
 
