@@ -6,8 +6,8 @@ const Hero = () => {
     <div style={{
       gridTemplateColumns: "300px 1fr",
       maxHeight: "fit-content"
-    }} className='container mx-auto  grid grid-cols-2  '>
-      <aside className='flex flex-col gap-6 text-lg font-medium border-r-2 pt-6 '>
+    }} className='container grid grid-cols-2 gap-8  '>
+      <aside className='flex flex-col gap-4 text-lg border-r-2 pt-6 '>
         <div className="women-fashion">
           <p className='flex justify-between items-center pr-8'>Woman’s Fashion
             <span className='relative top-[2.5px]'><IoIosArrowForward /></span>
