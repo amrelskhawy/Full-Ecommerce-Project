@@ -19,13 +19,14 @@ export const SectionRow = ({ tag, title, products }: ISectionRowProps) => {
 
 
       <div className="grid grid-cols-4 gap-2 gap-y-8">
-        <SectionRowCard  />
-        <SectionRowCard  />
-        <SectionRowCard  />
-        <SectionRowCard  />
+        {
+          products.map(product => (
+            <SectionRowCard key={product.id}  />
+          ))
+        }
       </div>
 
-      <button className="bg-mainColor w-fit mx-auto p-3 px-12 text-md rounded my-6 mb-0 text-white">View All Products</button>
+      <button className="bg-mainColor w-fit mx-auto p-3 px-12 text-md rounded my-12 mb-0 text-white">View All Products</button>
     </div>
   )
 }
