@@ -18,14 +18,11 @@ export const SectionRow = ({ tag, title, products }: ISectionRowProps) => {
       <h2 className="text-3xl font-medium my-6">{title || "Flash Sales"}</h2>
 
 
-      <div className="flex gap-4">
+      <div className="grid grid-cols-4 gap-2 gap-y-8">
         <SectionRowCard  />
         <SectionRowCard  />
         <SectionRowCard  />
         <SectionRowCard  />
-        {/* <SectionRowCard  /> */}
-        <SectionRowCard  />
-
       </div>
 
       <button className="bg-mainColor w-fit mx-auto p-3 px-12 text-md rounded my-6 mb-0 text-white">View All Products</button>
