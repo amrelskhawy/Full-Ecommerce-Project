@@ -9,7 +9,7 @@ interface ISectionRowProps {
 
 export const SectionRow = ({ tag, title, products }: ISectionRowProps) => {
   return (
-    <div className="container mx-auto my-8">
+    <div className="container flex flex-col my-8">
       <div className="flex gap-4 items-center mb-3">
         <span className="w-5 h-10 inline-block rounded-md bg-red-500" />
         <p className="text-xl font-medium text-red-500">{tag || "Today’s"}</p>
@@ -23,10 +23,12 @@ export const SectionRow = ({ tag, title, products }: ISectionRowProps) => {
         <SectionRowCard  />
         <SectionRowCard  />
         <SectionRowCard  />
-        <SectionRowCard  />
+        {/* <SectionRowCard  /> */}
         <SectionRowCard  />
 
       </div>
+
+      <button className="bg-mainColor w-fit mx-auto p-3 px-12 text-md rounded my-6 mb-0 text-white">View All Products</button>
     </div>
   )
 }
