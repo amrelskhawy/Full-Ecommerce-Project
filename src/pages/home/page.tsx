@@ -1,6 +1,7 @@
 import { SectionRow } from "../../components/SectionRow";
 import { Banner } from "./components/banner";
 import Hero from "./components/Hero";
+import NewArrival from "./components/new-arrival";
 
 export interface HomeProps {
 
@@ -28,6 +29,7 @@ export function Home({ }: HomeProps) {
 
       <SectionRow tag={"Our Products"} title={"Explore Our Products"} products={[dummyProduct,dummyProduct,dummyProduct,dummyProduct,dummyProduct,dummyProduct,dummyProduct,dummyProduct]} />
 
+      <NewArrival />
 
     </div>
   );
